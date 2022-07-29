@@ -6,4 +6,9 @@ const addProducts = async (body: Iproducts): Promise<Iproducts> => {
   return result;
 };
 
-export default { addProducts };
+const getAll = async (): Promise<Iproducts[]> => {
+  const result = await model.getAll();
+  return result as Iproducts[];
+};
+
+export default { addProducts, getAll };
