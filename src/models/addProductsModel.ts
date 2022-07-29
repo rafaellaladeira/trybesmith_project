@@ -1,4 +1,3 @@
-import { number } from 'joi';
 import { ResultSetHeader } from 'mysql2';
 import Iproducts from '../interfaces/addProducts.interface';
 import connection from './connection';
