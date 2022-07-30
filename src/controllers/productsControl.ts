@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import service from '../services/addProductsServices';
+import service from '../services/productsServices';
 
 const addProducts = async (req: Request, res: Response): Promise<Response> => {
   const result = await service.addProducts(req.body);  

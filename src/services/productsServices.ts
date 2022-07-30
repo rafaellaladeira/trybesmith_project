@@ -1,5 +1,5 @@
 import Iproducts from '../interfaces/addProducts.interface';
-import model from '../models/addProductsModel';
+import model from '../models/productsModel';
 
 const addProducts = async (body: Iproducts): Promise<Iproducts> => {
   const result = await model.addProducts(body);
