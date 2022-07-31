@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import JWTgenerate from '../helpers/JWTgenerate';
-// import IaddUser from '../interfaces/addUsers.interface';
 import service from '../services/usersServices';
 
 const addUser = async (req: Request, res: Response) => {
