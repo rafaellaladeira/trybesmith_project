@@ -8,9 +8,7 @@ const checkLogin = async (req: Request, res: Response) => {
   const { username } = req.body;
   
   const result = await service.checkLogin(data);
-  
   const send = result.find((e): number => e.id);
-  console.log(send);
   
   if (send === undefined) {
     return res.status(401).json({ message: 'Username or password invalid' });

@@ -4,6 +4,6 @@ import loginValidation from '../middleware/loginValidationMiddleware';
 
 const loginRouter = Router();
 
-loginRouter.get('/', loginValidation, control.checkLogin);
+loginRouter.post('/', loginValidation, control.checkLogin);
 
 export default loginRouter;
