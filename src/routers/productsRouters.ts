@@ -6,6 +6,6 @@ import amountProductsValidation from '../middleware/productValidationMiddleware'
 const router = Router();
 
 router.get('/', ProductsControl.getAll);
-router.post('/', nameProductsValidation, amountProductsValidation, ProductsControl.addProducts);
+router.post('/', amountProductsValidation, nameProductsValidation, ProductsControl.addProducts);
 
 export default router;
